@@ -50,7 +50,7 @@ module.exports = {
       rows = JSON.parse(this.rows);
     }
 
-    if (!rows || !rows.length || !Array.isArray(rows)) {
+    if (!rows || !Array.isArray(rows)) {
       inputValidated = false;
     } else {
       rows.forEach((row) => { if (!Array.isArray(row)) { inputValidated = false; } });
